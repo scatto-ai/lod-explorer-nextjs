@@ -1,5 +1,4 @@
-// src/components/LODSelector.tsx
-'use client'; // Precisa ser Client Component para interagir com onClick
+'use client'; 
 
 import React from 'react';
 import { Button } from '@/components/ui/button';

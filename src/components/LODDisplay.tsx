@@ -1,8 +1,5 @@
-// src/components/LODDisplay.tsx
-// Pode ser um Server Component se não precisar de estado ou efeitos.
-// Se usar <Image> do Next.js com 'use client' no pai, este pode continuar Server.
 import React from 'react';
-import Image from 'next/image'; // Usar Image do Next.js para otimização
+import Image from 'next/image'; 
 import {
   Card,
   CardContent,
@@ -10,22 +7,15 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+
 import { LODItem } from '@/data/lodData';
 
-/**
- * Propriedades para o componente LODDisplay.
- */
 interface LODDisplayProps {
-  /** O item LOD a ser exibido. Pode ser undefined se nada estiver selecionado. */
-  lodItem?: LODItem; // Marcar como opcional para lidar com estado inicial vazio
+  lodItem?: LODItem; 
 }
 
-/**
- * Componente responsável por exibir os detalhes (imagem, título, descrição)
- * de um item LOD específico.
- */
 export function LODDisplay({ lodItem }: LODDisplayProps) {
-  console.log('Rendering LODDisplay for:', lodItem?.name); // Log para depuração
+  console.log('Rendering LODDisplay for:', lodItem?.name); 
 
   if (!lodItem) {
     return (
@@ -56,11 +46,11 @@ export function LODDisplay({ lodItem }: LODDisplayProps) {
           <Image
             src={lodItem.imageUrl}
             alt={`Representação visual do ${lodItem.name}`}
-            fill // Ocupa todo o espaço do container pai
-            style={{ objectFit: 'contain' }} // Garante que a imagem inteira seja visível
-            priority={lodItem.id === 100} // Prioriza o carregamento da primeira imagem
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Ajuda na otimização
-            quality={75} // Qualidade da imagem
+            fill 
+            style={{ objectFit: 'contain' }} 
+            priority={lodItem.id === 100} 
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+            quality={75} 
           />
         </div>
         <p className="text-sm text-muted-foreground">{lodItem.description}</p>

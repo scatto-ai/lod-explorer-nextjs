@@ -1,5 +1,4 @@
-// src/app/page.tsx
-import { LODExplorer } from "@/components/LODExplorer"; // Importa o componente principal
+import { LODExplorer } from "@/components/LODExplorer"; 
 
 export default function Home() {
   return (
