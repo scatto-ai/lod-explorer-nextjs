@@ -32,10 +32,3 @@ export const lodData: LODItem[] = [
       'Inclui detalhes de modelagem e gráficos necessários para explicar como os elementos se conectam a sistemas próximos ou adjacentes...',
   },
 ];
-
-export interface LODItem {
-  id: number;
-  name: string;
-  imageUrl: string;
-  description: string;
-}
