@@ -1,10 +1,9 @@
-// src/components/LODExplorer.tsx
-'use client'; // Precisa ser Client Component para gerenciar estado (useState)
+'use client'; 
 
 import React, { useState, useCallback, useMemo } from 'react';
 import { LODSelector } from './LODSelector';
 import { LODDisplay } from './LODDisplay';
-import { lodData, LODItem } from '@/data/lodData'; // Importa dados e tipo
+import { lodData, LODItem } from '@/data/lodData'; 
 
 /**
  * Componente principal que orquestra a seleção e exibição dos níveis de LOD.
