@@ -1,6 +1,4 @@
-// src/data/lodData.ts
-
-import { LODItem } from './types'; // Supondo que você moveu a interface para types.ts ou similar
+import { LODItem } from './types'; 
 
 export const lodData: LODItem[] = [
   {
