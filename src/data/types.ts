@@ -3,4 +3,4 @@ export interface LODItem {
     name: string;
     imageUrl: string;
     description: string;
-}
+  }

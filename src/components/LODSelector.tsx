@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { LODItem } from '@/data/lodData'; // Importa o tipo
+import type { LODItem } from '@/data/lodData';
 
 /**
  * Propriedades para o componente LODSelector.
