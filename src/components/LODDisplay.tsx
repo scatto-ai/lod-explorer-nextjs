@@ -7,19 +7,18 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-// import { LODItem } from '@/data/lodData'; // <-- LINHA ANTIGA/INCORRETA
-import { LODItem } from '@/data/types';   // <-- LINHA NOVA/CORRETA
+import { LODItem } from '@/data/types';
 
 interface LODDisplayProps {
-  lodItem?: LODItem; // Usa o tipo importado de types.ts
+  lodItem?: LODItem; 
 }
 
 export function LODDisplay({ lodItem }: LODDisplayProps) {
-  // ... resto do componente
+
    console.log('Rendering LODDisplay for:', lodItem?.name);
 
    if (!lodItem) {
-     // ... placeholder ...
+
      return (
        <Card className="w-full animate-pulse">
          {/* ... placeholder content ... */}

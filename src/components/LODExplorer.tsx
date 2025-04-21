@@ -1,20 +1,18 @@
-// src/components/LODExplorer.tsx
 'use client';
 
 import React, { useState, useCallback, useMemo } from 'react';
 import { LODSelector } from './LODSelector';
 import { LODDisplay } from './LODDisplay';
-// import { lodData, LODItem } from '@/data/lodData'; // <-- LINHA ANTIGA/INCORRETA
-import { lodData } from '@/data/lodData';           // <-- Importa SÓ os dados
-import { LODItem } from '@/data/types';            // <-- Importa o TIPO de types.ts
+import { lodData } from '@/data/lodData';           
+import { LODItem } from '@/data/types';           
 
 export function LODExplorer() {
- // ... resto do componente
-  console.log('Rendering LODExplorer');
+
+    console.log('Rendering LODExplorer');
 
   const [selectedLODId, setSelectedLODId] = useState<number | null>(lodData[0]?.id ?? null);
 
-  const handleSelectLOD = useCallback((lod: LODItem) => { // Usa o tipo importado de types.ts
+  const handleSelectLOD = useCallback((lod: LODItem) => { 
     console.log('LOD Selected:', lod.name);
     setSelectedLODId(lod.id);
   }, []);
@@ -31,7 +29,7 @@ export function LODExplorer() {
       <LODSelector
         availableLODs={lodData}
         selectedLODId={selectedLODId ?? -1}
-        onSelectLOD={handleSelectLOD}
+        onSelectLODAction={handleSelectLOD}
       />
       <LODDisplay lodItem={selectedLODItem} />
     </div>
