@@ -2,7 +2,6 @@
 
 Uma aplicação web interativa construída com Next.js, React e TypeScript para visualizar e entender os diferentes Níveis de Desenvolvimento (LOD - Level of Development/Definition) comumente utilizados em projetos de Modelagem da Informação da Construção (BIM).
 
-**[Link para a Demo Ao Vivo]**([LINK_DA_SUA_APP_NA_VERCEL])
 
 ---
 

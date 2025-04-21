@@ -7,13 +7,18 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+<<<<<<< HEAD
 import { LODItem } from '@/data/types';
+=======
+import { LODItem } from '@/data/types';   
+>>>>>>> 9818d76026c7e9aa7819f97aa3a13ce6c73c9584
 
 interface LODDisplayProps {
   lodItem?: LODItem; 
 }
 
 export function LODDisplay({ lodItem }: LODDisplayProps) {
+<<<<<<< HEAD
 
    console.log('Rendering LODDisplay for:', lodItem?.name);
 
@@ -26,6 +31,20 @@ export function LODDisplay({ lodItem }: LODDisplayProps) {
      );
    }
 
+=======
+ 
+   console.log('Rendering LODDisplay for:', lodItem?.name);
+
+   if (!lodItem) {
+    
+     return (
+       <Card className="w-full animate-pulse">
+        
+       </Card>
+     );
+   }
+
+>>>>>>> 9818d76026c7e9aa7819f97aa3a13ce6c73c9584
    return (
      <Card className="w-full overflow-hidden transition-all duration-300 ease-in-out">
        <CardHeader>
@@ -48,4 +67,8 @@ export function LODDisplay({ lodItem }: LODDisplayProps) {
        </CardContent>
      </Card>
    );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9818d76026c7e9aa7819f97aa3a13ce6c73c9584

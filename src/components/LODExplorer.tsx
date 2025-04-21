@@ -7,12 +7,9 @@ import { lodData } from '@/data/lodData';
 import { LODItem } from '@/data/types';           
 
 export function LODExplorer() {
-
-    console.log('Rendering LODExplorer');
-
   const [selectedLODId, setSelectedLODId] = useState<number | null>(lodData[0]?.id ?? null);
 
-  const handleSelectLOD = useCallback((lod: LODItem) => { 
+  const handleSelectLOD = useCallback((lod: LODItem) => {
     console.log('LOD Selected:', lod.name);
     setSelectedLODId(lod.id);
   }, []);
