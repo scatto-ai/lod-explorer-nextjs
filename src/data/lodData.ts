@@ -1,6 +1,7 @@
 import { LODItem } from './types';
 
-export const lodData: LODItem[] = [  {
+export const lodData: LODItem[] = [  
+    {
     id: 100,
     name: 'LOD 100',
     imageUrl: '/images/100.png',
